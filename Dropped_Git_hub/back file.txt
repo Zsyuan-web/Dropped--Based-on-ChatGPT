@@ -1,1 +1,0 @@
-{"api_key": ["\u65e0", "\u65e0"], "ip": ["\u65e0:\u65e0"], "raButton_key": [1, 0, 0], "raButton_ip": [1, 0]}
