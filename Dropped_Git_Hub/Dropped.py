@@ -59,11 +59,6 @@ class ChatGPT(QThread):
             self.finished.emit(text)  # 发送完成信号和程序执行结果
         except Exception as e:
             self.finished.emit('请求失败,请检查API和代理设置！')
-
-
-
-
-
     def get_response(self):
         self.start()
 
@@ -149,7 +144,6 @@ class Dropped_window(QMainWindow):
         # 主页面”清空“按钮 链接
         self.ui.pushButton_3.clicked.connect(self.PB_Rewrite_clear)
 
-
         # 窗口显示
         self.show()
 
@@ -165,7 +159,6 @@ class Dropped_window(QMainWindow):
         else:
             self.api_key = key_text
             self.ui.lineEdit.setText("API key已设置")
-
 
     # 设置页面“设为备用(key)”按钮功能
     def PB_kye_back(self):
@@ -186,7 +179,6 @@ class Dropped_window(QMainWindow):
             self.file_handler.write_file(self.content)
             self.api_key = key_text
             self.ui.lineEdit.setText("API key已设为备用,并已设置")
-
 
     # 设置页面“确认(ip)”按钮功能
     def PB_ip(self):
@@ -209,7 +201,6 @@ class Dropped_window(QMainWindow):
             self.ip = ip_text
             self.ui.lineEdit_2.setText("代理IP已设置")
             self.ui.lineEdit_3.setText("端口")
-
 
     # 设置页面“设为备用(ip)”按钮功能
     def PB_ip_back(self):
@@ -283,9 +274,7 @@ class Dropped_window(QMainWindow):
             self.ChatGPT.get_response() # 次线程任务开始
         else:
             self.ui.textEdit_2.setText("请输入文本……")
-
-        # 主页面”改写“按钮 功能
-
+    
     # 主页面”进一步改写“按钮 功能
     def PB_Fu_Rewrite(self):
         Rewrite_text = self.ui.textEdit.toPlainText()
@@ -367,7 +356,6 @@ class Dropped_window(QMainWindow):
         self.ui.stackedWidget.setCurrentIndex(0)
     def display_page2(self):
         self.ui.stackedWidget.setCurrentIndex(1)
-
 
     # 拖动
     def mousePressEvent(self, event):
