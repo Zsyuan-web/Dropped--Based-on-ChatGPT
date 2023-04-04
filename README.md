@@ -12,5 +12,7 @@ Droppde.ui文件可以由Qt Designer 打开，其内容可以根据自己的需�
 
 #### 完整免安装软件下载地址：
 https://wwpi.lanzouy.com/b04dtcm4f  
-密码:i78m
+密码:i78m  
+下载:https://wwpi.lanzouy.com/iKMwi0s3862d 
+密码:acm7
 ## 第一次尝试，十分简陋，请勿商用，勿怪。
